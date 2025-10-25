@@ -6,9 +6,18 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 17:13:16 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/09 14:03:02 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/10/25 19:36:26 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+int	ft_memcmp(const void *s1, const void *s2, int n)
+{
+	if (n != 0)
+	{
+		
+	}
+	else
+		return (0);
+}

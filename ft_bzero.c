@@ -6,13 +6,13 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 17:08:44 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/09 14:02:38 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/10/25 20:42:50 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, int n)
+void	ft_bzero(void *s, int n)
 {
 	int	i;
 

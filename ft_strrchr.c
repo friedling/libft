@@ -6,9 +6,26 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 17:12:33 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/09 14:03:34 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/10/25 18:45:16 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+char	*ft_strrchr(const char *s, int c)
+{
+	int	i;
+	int	x;
+
+	i = 0;
+	x = -1;
+	while (s[i] != c || s[i] != '\0')
+	{
+		if (s[i] == c)
+			x = i;
+		i++;
+	}
+	if (x != -1)
+		return (s[x]);
+	return (0);
+}

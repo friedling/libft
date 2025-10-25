@@ -1,18 +1,18 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/24 14:54:49 by fkraft            #+#    #+#              #
-#    Updated: 2025/10/24 14:59:22 by fkraft           ###   ########.fr        #
+#    Updated: 2025/10/25 20:42:16 by fkraft           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 SRC = ft_isalpha.c \
@@ -25,17 +25,23 @@ ft_memset.c \
 ft_bzero.c \
 ft_memcpy.c \
 ft_memmove.c \
-ft_strlcpy.c
+ft_strlcpy.c \
+ft_strlcat.c \
+ft_toupper.c \
+ft_tolower.c \
+ft_strchr.c \
+ft_strrchr.c \
+ft_strncmp.c 
 
-OBJ = $(SRCS:.c=.o)
+OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-%.o: %.c
-	$(CC $(CFLAGS) -c $< -o $@
+%.o: %.c libft.h
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ)

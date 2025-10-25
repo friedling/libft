@@ -6,9 +6,13 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 17:13:27 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/09 14:03:31 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/10/25 19:37:34 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+char	*ft_strnstr(const char *big, const char *little, int len)
+{
+	
+}
