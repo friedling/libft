@@ -6,7 +6,7 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 17:11:56 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/25 20:35:48 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/10/26 14:39:32 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ int	ft_strlcat(char *dst, const char *src, int size)
 			j++;
 		}
 	}
-	dst[i] = '/0';
+	dst[i] = '\0';
 	return (x);
 }

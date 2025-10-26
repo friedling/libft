@@ -6,7 +6,7 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 17:12:33 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/25 18:45:16 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/10/26 14:46:03 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ char	*ft_strrchr(const char *s, int c)
 		i++;
 	}
 	if (x != -1)
-		return (s[x]);
-	return (0);
+		return (&((char *)s)[x]);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 17:08:44 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/25 20:42:50 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/10/26 14:38:19 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ void	ft_bzero(void *s, int n)
 	i = 0;
 	while (i < n)
 	{
-		((unsigned char *)s)[i] = '0';
+		((unsigned char *)s)[i] = 0;
 		i++;
 	}
-	return (s);
 }
