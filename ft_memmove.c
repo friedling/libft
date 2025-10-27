@@ -6,15 +6,15 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 17:09:26 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/09 14:03:09 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/10/26 15:39:16 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, int n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	int				i;
+	size_t				i;
 	unsigned char	temp[255];
 
 	i = 0;

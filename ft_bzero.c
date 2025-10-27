@@ -6,15 +6,15 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 17:08:44 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/26 14:38:19 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/10/26 15:36:07 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, int n)
+void	ft_bzero(void *s, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)

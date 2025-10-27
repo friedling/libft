@@ -6,7 +6,7 @@
 #    By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/24 14:54:49 by fkraft            #+#    #+#              #
-#    Updated: 2025/10/25 20:42:16 by fkraft           ###   ########.fr        #
+#    Updated: 2025/10/26 15:21:19 by fkraft           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,8 @@ ft_toupper.c \
 ft_tolower.c \
 ft_strchr.c \
 ft_strrchr.c \
-ft_strncmp.c 
+ft_strncmp.c \
+ft_memchr.c \
 
 OBJ = $(SRC:.c=.o)
 
