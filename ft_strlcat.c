@@ -6,7 +6,7 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 17:11:56 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/27 17:53:12 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/11/19 15:20:25 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	i = ft_strlen(dst);
 	j = 0;
 	x = i;
-
 	if (size <= i)
 		return (ft_strlen(src) + size);
 	while (i < size - 1 && src[j] != '\0')

@@ -1,38 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/08 17:13:46 by fkraft            #+#    #+#             */
-/*   Updated: 2025/11/24 19:06:43 by fkraft           ###   ########.fr       */
+/*   Created: 2025/11/24 20:16:47 by fkraft            #+#    #+#             */
+/*   Updated: 2025/11/24 20:26:47 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+void	ft_putendl_fd(char *s, int fd)
 {
-	size_t	i;
-	int		nbr;
-	int		minus;
-
-	i = 0;
-	nbr = 0;
-	minus = 1;
-	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == ' ')
-		i++;
-	if (nptr[i] == '+' || nptr[i] == '-')
-	{
-		if (nptr[i] == '-')
-			minus = -1;
-		i++;
-	}
-	while (ft_isdigit(nptr[i]) == 1 && nptr[i] != '\0')
-	{
-		nbr = (nbr * 10) + (nptr[i] - 48);
-		i++;
-	}
-	return (nbr * minus);
+	ft_putstr_fd(s, fd);
+	write(fd, "\n", 1);
 }

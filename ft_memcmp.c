@@ -6,18 +6,22 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 17:13:16 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/25 19:36:26 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/10/28 14:18:29 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, int n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if (n != 0)
+	size_t	i;
+
+	i = 0;
+	while (i < n)
 	{
-		
+		if (((unsigned char *)s1)[i] != ((unsigned char *)s2)[i])
+			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
+		i++;
 	}
-	else
-		return (0);
+	return (0);
 }

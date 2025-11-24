@@ -6,7 +6,7 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 16:48:51 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/27 18:31:40 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/11/24 20:24:58 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,14 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
-//int	ft_memcmp(const void *s1, const void *s2, int n);
-//char	*ft_strnstr(const char *big, const char *little, int len);
-//int	ft_atoi(const char *nptr);
+int	ft_memcmp(const void *s1, const void *s2, size_t n);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
+int	ft_atoi(const char *nptr);
+void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strdup(const char *s);
+void	ft_putchar_fd(char c, int fd);
+void ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif

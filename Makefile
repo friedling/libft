@@ -6,7 +6,7 @@
 #    By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/24 14:54:49 by fkraft            #+#    #+#              #
-#    Updated: 2025/10/26 15:21:19 by fkraft           ###   ########.fr        #
+#    Updated: 2025/11/24 20:24:33 by fkraft           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,15 @@ ft_strchr.c \
 ft_strrchr.c \
 ft_strncmp.c \
 ft_memchr.c \
+ft_memcmp.c \
+ft_strnstr.c \
+ft_atoi.c \
+ft_calloc.c \
+ft_strdup.c \
+ft_putchar_fd.c \
+ft_putstr_fd.c \
+ft_putendl_fd.c \
+ft_putnbr_fd.c
 
 OBJ = $(SRC:.c=.o)
 
