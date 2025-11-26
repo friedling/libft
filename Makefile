@@ -6,16 +6,16 @@
 #    By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/24 14:54:49 by fkraft            #+#    #+#              #
-#    Updated: 2025/11/26 01:37:59 by fkraft           ###   ########.fr        #
+#    Updated: 2025/11/26 02:19:46 by fkraft           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = cc
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
-SRC = ft_isalpha.c \
+SRCS = ft_isalpha.c \
 ft_isdigit.c \
 ft_isalnum.c \
 ft_isascii.c \
@@ -50,18 +50,18 @@ ft_putstr_fd.c \
 ft_putendl_fd.c \
 ft_putnbr_fd.c
 
-OBJ = $(SRC:.c=.o)
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
-%.o: %.c libft.h
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
