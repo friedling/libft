@@ -6,7 +6,7 @@
 /*   By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 17:12:43 by fkraft            #+#    #+#             */
-/*   Updated: 2025/10/27 18:31:25 by fkraft           ###   ########.fr       */
+/*   Updated: 2025/11/26 01:59:12 by fkraft           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t	i;
+	unsigned int	i;
 
 	i = 0;
 	if (n == 0)

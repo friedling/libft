@@ -6,7 +6,7 @@
 #    By: fkraft <fkraft@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/24 14:54:49 by fkraft            #+#    #+#              #
-#    Updated: 2025/11/24 20:24:33 by fkraft           ###   ########.fr        #
+#    Updated: 2025/11/26 01:37:59 by fkraft           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,13 @@ ft_strnstr.c \
 ft_atoi.c \
 ft_calloc.c \
 ft_strdup.c \
+ft_substr.c \
+ft_strjoin.c \
+ft_strtrim.c \
+ft_split.c \
+ft_itoa.c \
+ft_strmapi.c \
+ft_striteri.c \
 ft_putchar_fd.c \
 ft_putstr_fd.c \
 ft_putendl_fd.c \
